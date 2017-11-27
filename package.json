@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/supervisor ./server.js"
+  },
+  "devDependencies": {
+    "supervisor": "0.9.x"
+  },
+  "dependencies": {
+    "babel": "^5.4.7",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-graphql": "0.6.11",
+    "graphql": "0.11.x",
+    "graphql.js": "^0.4.19",
+    "lodash": "^4.17.4",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "twig": "~0.10.3",
+    "underscore": "1.8.x",
+    "graphql-tools": "^2.8.0"
+  }
+}

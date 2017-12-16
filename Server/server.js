@@ -3,7 +3,6 @@ var express = require('express');
 var graphql = require('graphql');
 var expressGraphql = require('express-graphql');
 
-//import { makeExecutableSchema } from './schema.js';
 var schema = require('./schema.js');
 
 var app = express();

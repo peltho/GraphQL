@@ -16,7 +16,7 @@ const authors = [
 
 
 const resolvers = {
-    RootQuery: {
+    Query: {
         post: (_, { id }) => find(posts, { id: id }),
         posts: () => posts,
         author: (_, { id }) => find(authors, { id: id }),

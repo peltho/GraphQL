@@ -1,12 +1,12 @@
 require('babel/register');
-// schema.js
-import Post from './post.js';
+
+import Post from './Models/post.js';
 
 import { makeExecutableSchema } from 'graphql-tools';
 import resolvers from './resolvers.js';
 
-const RootQuery = `
-    type RootQuery {
+const Queries = `
+    type Query {
         post(id: Int!): Post
         posts: [Post]
         author(id: Int!): Author
@@ -14,7 +14,7 @@ const RootQuery = `
     }
 `;
 
-const Mutation = `
+const Mutations = `
     type Mutation {
         upvotePost (postId: Int!): Post
     }
@@ -22,14 +22,14 @@ const Mutation = `
 
 const SchemaDefinition = `
     schema {
-        query: RootQuery
+        query: Query
         mutation: Mutation
    }
 `;
 
 export default makeExecutableSchema({
   typeDefs: [
-    SchemaDefinition, RootQuery, Mutation, Post
+    SchemaDefinition, Queries, Mutations, Post
   ],
   resolvers: resolvers
 });

@@ -1,11 +1,13 @@
 require('babel/register');
 
+import Author from './author';
+
 const Comment = `
   type Comment {
     id: Int!
     message: String
-    author: String
+    author: Author
   }
 `;
 
-export default () => [Comment];
+export default () => [Comment, Author];

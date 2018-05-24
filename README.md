@@ -4,7 +4,8 @@ Install & launch it
 
 ```
 npm install
-node server.js
+npm install graphql-request
+node Server/server.js
 ```
 Go to [http://localhost:3000](http://localhost:3000) and test it via GraphiQL
 

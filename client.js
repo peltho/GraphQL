@@ -32,6 +32,8 @@ const mutation = `mutation upvotePost($id: Int!) {
     }
 }`
 
+console.log('requesting graphql endpoint API with graphql-request');
+
 // Run query
 client.request(query, variables).then(
     data => console.log(data)

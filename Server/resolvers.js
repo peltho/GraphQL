@@ -2,16 +2,16 @@ require('babel/register');
 import { find, filter } from 'lodash';
 
 const posts = [
-  { id: 1, authorId: 1, title: 'Introduction to GraphQL', votes: 2 },
-  { id: 2, authorId: 2, title: 'Welcome to Apollo', votes: 3 },
-  { id: 3, authorId: 2, title: 'Advanced GraphQL', votes: 1 },
-  { id: 4, authorId: 3, title: 'Launchpad is Cool', votes: 7 },
+  { id: 1, authorId: 1, title: 'Lorem ipsum', votes: 2, content: 'du latin connu' },
+  { id: 2, authorId: 2, title: 'Cave canem', votes: 3, content: 'du latin, attention au chien' },
+  { id: 3, authorId: 2, title: 'Homo homini lupus', votes: 1, content: 'du blabla, l\'homme est un loup pour l\'homme' },
+  { id: 4, authorId: 3, title: 'Rosae rosarum rosis', votes: 7, content: 'du blabla bidon décliné' },
 ];
 
 const authors = [
-  { id: 1, firstName: 'Tom', lastName: 'Coleman' },
-  { id: 2, firstName: 'Sashko', lastName: 'Stubailo' },
-  { id: 3, firstName: 'Mikhail', lastName: 'Novikov' },
+  { id: 1, firstName: 'Thomas', lastName: 'Pellegatta' },
+  { id: 2, firstName: 'François', lastName: 'Damiens' },
+  { id: 3, firstName: 'Eric', lastName: 'Cantona' },
 ];
 
 
